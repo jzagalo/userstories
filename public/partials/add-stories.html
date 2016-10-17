@@ -1,0 +1,55 @@
+<div class="ui container">
+	<div class="ui center aligned segment" id="addstory-segment">
+	<h3 class="ui header"> Add a New Story</h3>
+		<form class="ui form" name="story"  novalidate>
+		    <div class="ui positive message" ng-if="positive" ng-click="hideMessage()">
+					  <i class="close icon"></i>
+					  <div class="header">
+					    {{message}}
+					  </div>
+					  <p>Now <b>Create a Story </b> Or add more Milestones.</p>
+			  </div>
+			  <div class="field">
+			    <label>TITLE </label>
+			    <input type="text" ng-model="newstory.title">
+			  </div>
+
+			  <div class="field">
+			    <label>BODY</label>
+			    <textarea ng-model="newstory.body"></textarea>
+			  </div>
+			 <h3>Add a Milestone</h3>
+			 <div class="fields">
+				    <div class="six wide field">
+				      <label>NAME</label>
+				      <input type="text" placeholder="MileStones Name" ng-model="newstory.milestone.name">
+				    </div>
+				    <div class="four wide field">
+				      <label>NAME_DE</label>
+				      <input type="text" placeholder="MileStones Name DE" ng-model="newstory.milestone.name_de">
+				    </div>
+				    <div class="six wide field">
+				      <label>NAME_EN</label>
+				      <input type="text" placeholder="MileStones Name Eng" ng-model="newstory.milestone.name_en">
+				    </div>
+  			</div>
+  			<div class="fields">
+				    <div class="six wide field">
+				      <label>START DATE</label>
+				      <input type="date" placeholder="MileStones Start Date" ng-model="newstory.milestone.start_date">
+				    </div>
+				    <div class="four wide field">
+				      <label>END DATE</label>
+				      <input type="date" placeholder="MileStones End date" ng-model="newstory.milestone.end_date">
+				    </div>
+				    <div class="six wide field">
+				      <label>USECASE</label>
+				      <input type="text" placeholder="MileStones Usecase" ng-model="newstory.milestone.usecase">
+				    </div>
+				    <a class="ui basic button" ng-click="addMilestone()">Add Milestone</a>
+  			</div>
+  			<button class="ui teal button" type="submit" ng-click="addStory()">Create Story</button>
+  	
+	</div>
+</div>
+   

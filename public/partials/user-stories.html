@@ -1,0 +1,29 @@
+
+<div class="ui container">
+<div class="ui three column grid">
+
+	<div ng-repeat="story in stories track by $index" class="column">
+		<h3 class="ui header">{{ story.title }}</h3>
+		<div>{{ story.body }}</div>
+		<a id="milestones" href="#" ng-click="ToggleMileStones()">Show Milestones</a>
+		<ul class="ui list">
+			<li ng-repeat="milestones in story.milestones"  class="item" ng-if="showMile">
+				<h4>{{milestones.name}}</h4>
+				<p>
+				    <span>{{milestones.name_en}}</span>
+				    <br/>
+				    <span>{{milestones.name_de}}</span>
+				</p>				
+				<p>
+					<span>{{milestones.start_date | date:'mediumDate' }}</span>
+					<br/>
+					<span>{{milestones.end_date | date:'mediumDate'}}</span>
+				</p>
+				
+				<p>{{milestones.usecase}}</p>
+			</li>
+
+		</ul>
+	</div>
+</div>
+</div>
