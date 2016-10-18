@@ -26,8 +26,8 @@ body{
     top:0;
     bottom: 0;*/
 }
-ul{
-    list-style: none;
+ul li{
+    list-style-type: none;
 }
 
 #addstory-segment{

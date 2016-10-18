@@ -35,16 +35,20 @@ app.controller('StoriesList', function($scope, $location, $http){
 
 	// Adds a  new story
 	$scope.addStory = function(){
-		delete $scope.newstory.milestone;
+		 //if(!$scope.newstory.milestone)
 		$http.post("/add-stories",{
 			title: $scope.newstory.title,
 			body: $scope.newstory.body,
 			milestones: $scope.newstory.milestones
-		}).success(function(){
-			console.log('done');
+		}).success(function(data){
+			$scope.newstory = {};
+			$scope.positive = true;	
+		    $scope.message = 'Story Successfully Added';
+		}).error(function(error){
+			console.log(error);
 		});
 
-		
+		    
 	}
 	// Function can be used to add a Milestone
 	$scope.addMilestone = function(){		

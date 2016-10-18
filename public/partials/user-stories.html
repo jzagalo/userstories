@@ -5,7 +5,7 @@
 	<div ng-repeat="story in stories track by $index" class="column">
 		<h3 class="ui header">{{ story.title }}</h3>
 		<div>{{ story.body }}</div>
-		<a id="milestones" href="#" ng-click="ToggleMileStones()">Show Milestones</a>
+		<mile-stones class="ui small primary button">Hide Milestones</mile-stones>
 		<ul class="ui list">
 			<li ng-repeat="milestones in story.milestones"  class="item" ng-if="showMile">
 				<h4>{{milestones.name}}</h4>

@@ -1,21 +1,24 @@
 /node_modules/
 /public
-!css/
-!js/angular/angular.js
-!js/angular-animate/angular-animate.js
-!js/angular-route/angular-route.js
-!js/jquery/dist/jquery.js
-!js/app.js
-!js/config.js
-!js/controllers.js
-!js/main.js
-!js/stories.js
+!public/css/
+!public/js/angular/angular.js
+!public/js/angular-animate/angular-animate.js
+!public/js/angular-route/angular-route.js
+!public/js/jquery/dist/jquery.js
+!public/js/app.js
+!public/js/config.js
+!public/js/controllers.js
+!public/js/main.js
+!public/js/stories.js
+!public/js/directives.js
+!public/public/jsp/
+!public/cssp/
 
 
-/semantic
-!semantic/css/themes/default/
-!semantic/semantic.min.css
-!semantic/js/semantic.js
+/public/semantic
+!public/semantic/css/themes/default/
+!public/semantic/semantic.min.css
+!public/semantic/js/semantic.js
 
 
 /dist
