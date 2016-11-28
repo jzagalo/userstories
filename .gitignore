@@ -2,7 +2,10 @@
 node_modules
 
 !public/css/*
-public/js/*
+public/js/angular-animate/
+public/js/angular-route/
+public/js/angular/
+public/js/jquery/*
 
 !public/js/app.js
 !public/js/config.js
